@@ -63,6 +63,14 @@ header#cabecalho h2 {
     margin-top: 0px;
 }
 
+/* Vídeo */
+
+video#video-lateral {
+
+    width: 350px
+}
+
+
 /* Formatação de imagens com legendas*/
 
 figure.foto-legenda {
