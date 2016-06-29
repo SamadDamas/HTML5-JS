@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+<body style="background-color:#730">
+    <input type="number" id="numero">
+    <button onclick="Calcular()">calc</button>
+    resultado: <input id="result">
+</body>
+<script>
+
+function Calcular(){
+
+    var numero = Number(document.getElementById('numero').value)
+    , pi = 3.14159;
+
+    function CalcularAreaDoCirculo(valor, pi) {
+        return pi * Math.pow(valor,2);
+    }
+
+    //passa resultado pra tela
+    document.getElementById('result').value = CalcularAreaDoCirculo(numero, pi);;
+
+}
+</script>
+
+</html> 
