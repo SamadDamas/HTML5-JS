@@ -1,0 +1,39 @@
+<html>
+
+<head>
+</head>
+
+<body>
+ <!--Lugar para colocar os números e calcular-->       
+        <input type="number" id="ia">
+        <input type="number" id="ib">
+        <button onclick="cal()">Calcular</button>
+        <input type="number" id="ir">
+
+    <script>
+
+//Agrupamento de variáveis para reduzir o código
+var a,b,r;
+
+//Função que calcula as variáveis a e b
+        function cal() {
+
+        a = Number(document.getElementById('ia').value);
+        b = Number(document.getElementById('ib').value);
+
+//Função que soma e tira a media entre a e b
+        function media(a,b) {
+
+        return (a+b)/2
+
+        }
+
+//Chama a função media e passa o resultado pra tela através através do input 'ir'
+        r = media(a,b);
+
+        document.getElementById('ir').value = r;
+
+        }
+        
+    </script>
+</body>

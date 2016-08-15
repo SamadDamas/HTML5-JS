@@ -6,23 +6,23 @@
         <input type="number" id="ia">
         <input type="number" id="ib">
         <input type="number" id="ic">
-        <button onclick="calcular()">calcular</button>
+        <button onclick="cal()">calcular</button>
         <input type="number" id="ir">
         <script>
             var a,b,c,r;
 
-            function calcular(){
+            function cal(){
 
             a = Number(document.getElementById('ia').value);
             b = Number(document.getElementById('ib').value);
             c = Number(document.getElementById('ic').value);
  
-            function calc(a,b,c) {
+            function media(a,b,c) {
                 return (a+b+c)/3
                 //modo correto = ((a*2)+(b*3)+(c*5))/(2+3+5);
             }
 
-            r = calc(a,b,c);
+            r = media(a,b,c);
 
             document.getElementById('ir').value = r;
 
