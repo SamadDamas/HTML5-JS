@@ -4,37 +4,34 @@
 </head>
 
 <body>
-    
-<input type="number" id="ia">
-<input type="number" id="ib">
-<button onclick="cal()">Calcular</button>
-<input type="number" id="ir">
 
-<script>
+    <input type="number" id="ia">
+    <input type="number" id="ib">
+    <button onclick="cal()">Calcular</button>
+    <input type="number" id="ir">
 
-var a,b,r;
-
-
-function cal() {
-
-a = Number(document.getElementById('ia').value);
-b = Number(document.getElementById('ib').value);
+    <script>
+        var a, b, r;
 
 
-function media(a,b) {
+        function cal() {
 
-return (a+b)/2
-
-}
-
-r = media(a,b);
-
-document.getElementById('ir').value = r;
-
-}
+            a = Number(document.getElementById('ia').value);
+            b = Number(document.getElementById('ib').value);
 
 
-</script>
+            function media(a, b) {
+
+                return (a + b) / 2
+
+            }
+
+            r = media(a, b);
+
+            document.getElementById('ir').value = r;
+
+        }
+    </script>
 
 </body>
 

@@ -24,7 +24,7 @@ Nivel Beginner
 --Ionic
 --NOSQL
 --Phonegap
-
+ 
 
 *********desiner patter********
 

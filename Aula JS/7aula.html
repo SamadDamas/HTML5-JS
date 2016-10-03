@@ -1,0 +1,44 @@
+<!-- 
+BackLOG
+ler quatro inteiros
+calcular a diferença entre AB e CD  - (A * B - C * D).
+mostrar na tela, com a palavra DIFERENÇA = X
+-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="number" id="ia">
+        <input type="number" id="ib">
+        <input type="number" id="ic">
+        <input type="number" id="id">
+        <button onclick="Calcular()">calcular</button>
+        <input type="number" id="ir">
+        <script>
+            var a,b,c,d,r;
+
+            function Calcular(){
+
+                //debugar o codigo
+                debugger;
+            
+            //pega html o valor e tranforma para numerico
+            a = Number(document.getElementById('ia').value);
+            b = Number(document.getElementById('ib').value);
+            c = Number(document.getElementById('ic').value);
+            d = Number(document.getElementById('id').value);
+
+            function Calc(a,b,c,d) {
+                return (a * b - c * d);
+            }
+
+            r = Calc(a,b,c,d);
+
+            document.getElementById('ir').value = r;
+
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+
+</head>
+
+
+
+<body>
+
+    <input type="number" id="ia">
+    <input type="number" id="ib">
+    <input type="number" id="ic">
+    <button onclick="Calcular()">calcular</button>
+    <br><br>
+    <label id="num"></label> <!-- Imputar o valor no label-->
+    <input type="text" id="ir">
+    <script>
+            var a,b,c,r;
+
+            function Calcular(){
+
+            a = Number(document.getElementById('ia').value);
+            b = Number(document.getElementById('ib').value);
+            c = Number(document.getElementById('ic').value);
+
+            function Calc(b,c) {
+                return b*c;
+            }
+
+            r = Calc(b,c);
+            document.getElementById('is').value = a;
+            document.getElementById('ir').value = 'SALARIO = U$ ' + r.toFixed(2);
+
+        }
+
+        </script>
+</body>
+
+</html>

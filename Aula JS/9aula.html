@@ -1,0 +1,106 @@
+<!--
+https://www.urionlinejudge.com.br/judge/en/problems/view/1009
+
+dividir em duas partes o com SOLID e o Basico
+Orientação a objeto | e funcoes
+
+_________
+Basico
+
+criar cada variavel
+Nome
+SalarioFixo
+VendasDinheiroMes
+
+Criar funcoies
+Calcular - 15% em cima das vendas do mes
+somar com o salario dele
+
+exibir com casas decimais - Total R$ 684,54
+
+
+_________
+SOLID
+
+criar um objeto funcionario com metudos e funcoes
+elexplo: 
+um cao tem atributos: cor, rassa;
+tbm metodos para acessar a rassa, teste de pedigri;
+tbm funcoes comer, dormir
+
+js
+criar um objeto vendedor - var Vendedor = new Object();
+seus atributos: Nome, SalarioFixo, VendasDinheiroMes
+seus metodos para acessar os atributos;
+E Função de calcular salario;
+funcao a parte de exibir o salario solicitado;
+
+
+
+
+Segue abaixo a lista dos assuntos que serão abordados:
+
+- 1: Chrome = depurar, console, inspecionar elementos, olhar cabeçalhos 
+- 2: Tipos de Dados (texto, número, lógico (true ou false)) 
+- 3: Variáveis (escopo global e local) 
+- 4: Operadores Lógicos (===, ==, !==, !=, >, >=, <, <=) 
+- 5: Condicional (If, IfElse, Switch, If Ternário) 
+- 6: Function (Nomeada e Anônima) 
+- 7: Tipos de Dados (Array e Dicionário (Objetos)) 
+- 8: Laços (For, While, Do While) 
+- 9: Manipulação de String's 
+- 10: Parse (int, float) 
+- 11: isNaN, undefined, null 
+- 12: DOM 
+- 13: Seletores, Atribuições de Conteúdo (value, text) 
+- 14: Eventos HTML (click, change, blur, focus, mouseover, keydown)
+
+A reunião será 100% prática, trazer notebook com algum dos softwares instalados (Visual Studio, Sublime, Notepad++, Brackets, Atom, Visual Studio Code)
+
+
+TDD
+Frameworks de Teste
+
+Bons developers que somos, vamos utilizar um framework pronto para testes já disponível no mercado, será um desses: 
+BrowserSwarm, Buster.js, FireUnit, Jasmine, JS Uni, ​Karma, QUnit, RhinoUnit ou TestSwarm.
+
+
+
+-->
+
+
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="number" id="ia">
+        <input type="number" id="ib">
+        <input type="number" id="ic">
+        <button onclick="calcular()">calcular</button>
+        <input type="number" id="ir">
+        <script>
+            var a,b,c,r;
+
+            function calcular(){
+
+            a = Number(document.getElementById('ia').value);
+            b = Number(document.getElementById('ib').value);
+            c = Number(document.getElementById('ic').value);
+
+            function calc(a,b,c) {
+                return (a+b+c)/3
+                //modo correto = ((a*2)+(b*3)+(c*5))/(2+3+5);
+            }
+
+            r = calc(a,b,c);
+
+            document.getElementById('ir').value = r;
+
+            }
+            
+        </script>
+    </body>
+</html>
