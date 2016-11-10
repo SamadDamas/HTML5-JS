@@ -1,95 +1,1464 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<body>
+<head>
+    <meta name="ms.loc" content="pt">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Eu Posso Programar</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="//www.microsoft.com/favicon.ico?v2">
+    <link href="css/rs-default.css" rel="stylesheet" />
+    <link href="css/shadowbox.css" rel="stylesheet" type="text/css" />
+    <style id="antiClickjack">
+        body {
+            display: none !important;
+        }
+    </style>
+    <script type="text/javascript">
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
 
-    <script>
-        {
-            "id": 1,
-            "name": "bulbasaur",
-            "base_experience": 64,
-            "height": 7,
-            "is_default": true,
-            "order": 1,
-            "weight": 69,
-            "abilities": [{
-                "is_hidden": true,
-                "slot": 3,
-                "ability": {
-                    "name": "chlorophyll",
-                    "url": "http://pokeapi.co/api/v2/ability/34/"
-                }
-            }],
-            "forms": [{
-                "name": "bulbasaur",
-                "url": "http://pokeapi.co/api/v2/pokemon-form/1/"
-            }],
-            "game_indices": [{
-                "game_index": 1,
-                "version": {
-                    "name": "white-2",
-                    "url": "http://pokeapi.co/api/v2/version/22/"
-                }
-            }],
-            "held_items": [],
-            "location_area_encounters": [],
-            "moves": [{
-                "move": {
-                    "name": "captivate",
-                    "url": "http://pokeapi.co/api/v2/move/445/"
-                },
-                "version_group_details": [{
-                    "level_learned_at": 0,
-                    "version_group": {
-                        "name": "heartgold-soulsilver",
-                        "url": "http://pokeapi.co/api/v2/version-group/10/"
-                    },
-                    "move_learn_method": {
-                        "name": "machine",
-                        "url": "http://pokeapi.co/api/v2/move-learn-method/4/"
-                    }
-                }, {
-                    "level_learned_at": 0,
-                    "version_group": {
-                        "name": "platinum",
-                        "url": "http://pokeapi.co/api/v2/version-group/9/"
-                    },
-                    "move_learn_method": {
-                        "name": "machine",
-                        "url": "http://pokeapi.co/api/v2/move-learn-method/4/"
-                    }
-                }, {
-                    "level_learned_at": 0,
-                    "version_group": {
-                        "name": "diamond-pearl",
-                        "url": "http://pokeapi.co/api/v2/version-group/8/"
-                    },
-                    "move_learn_method": {
-                        "name": "machine",
-                        "url": "http://pokeapi.co/api/v2/move-learn-method/4/"
-                    }
-                }]
-            }],
-            "species": {
-                "name": "bulbasaur",
-                "url": "http://pokeapi.co/api/v2/pokemon-species/1/"
-            },
-            "stats": [{
-                "base_stat": 45,
-                "effort": 0,
-                "stat": {
-                    "name": "speed",
-                    "url": "http://pokeapi.co/api/v2/stat/6/"
-                }
-            }],
-            "types": [{
-                "slot": 2,
-                "type": {
-                    "name": "poison",
-                    "url": "http://pokeapi.co/api/v2/type/4/"
-                }
-            }]
+            top.location = self.location;
         }
     </script>
-</body>
+</head>
+<!-- Google Tag Manager -->
+<script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-55J5P6');
+</script>
+<!-- End Google Tag Manager -->
 
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="page-scroll"><a href="#page-top">Home</a></li>
+                    <li class="page-scroll"><a href="#cursos">Cursos</a></li>
+                    <li class="page-scroll"><a href="#testimonios">Anime-se a dizer</a></li>
+                    <li class="page-scroll"><a href="#calendar">Semana do Código</a></li>
+                </ul>
+                <div class="logo"><img src="img/logo_microsoft.png" alt="microsoft">
+                    <img src="img/logo_code.png" alt="code">
+                    <!-- <img src="img/logo_mtv.png" alt="mtv" /> -->
+                    <img src="img/logo_comunidad.png" alt="comunidad">
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+    <div id="trigger1" class="trigger"></div>
+    <div class="blackout">
+        <div class="contenedor">
+            <div class="tirante">
+                <div></div>
+            </div>
+            <div class="cabo"></div>
+            <div class="bombillo">
+                <div class="luz"><img src="images/bombillo.png" alt="cursos" /></div>
+            </div>
+            <div class="mano"><img alt="mano" src="images/mano.png" /></div>
+            <div class="glow halo"></div>
+            <div class="glow halo2"></div>
+            <div class="glow halo3"></div>
+            <div class="glow halo4"></div>
+            <div class="glow halo5"></div>
+            <div class="bg"></div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="modal fade" id="hola" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                <div class="modal-backdrop"></div>
+                <div class="modal-dialog">
+                    <div class="modal-content-home">
+                        <button type="button" class="cerrar" data-dismiss="modal" aria-hidden="true">CERRAR</button>
+                        <div class="modal-home">
+                            <a href="https://join.microsoft.com/meet/v-caroja/0F31SH0J" target="_blank"> <img src="img/popup_home.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul id="scene" class="scene fill">
+                        <li class="layer expand-width" data-depth="0.60">
+                            <button style="top:400px!important; right:150px!important;"><img alt="nubes" src="images/nubes3.png"width="923" height="120" ></button>
+                        </li>
+                        <li class="layer expand-width" data-depth="0.90">
+                            <button><img alt="nubes" src="images/nubes.png" width="923" height="120"></button>
+                        </li>
+                        <li class="layer expand-width" data-depth="0.20">
+                            <button><img alt="nubes" src="images/nubes2.png" width="923" height="120"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-offset-1">
+                    <div class="contenedorguy">
+                        <div class="hombre"><img alt="animacion" src="images/girl.png" /></div>
+                        <!--  <div id="brazo" class="brazo"><img alt="animacion" src="images/brazo.png"/></div> -->
+                        <div id="hash" class="hash"><img alt="animacion" src="images/hashtag.jpg" /></div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="intro-text">
+                        <div class="cta-0 page-scroll"><a href="https://education.microsoft.com/courses-and-resources/resources/momento-docente-eu-posso-programar">Se você é um professor, clique aqui<span><img src="images/flecha-cta.png" alt="flecha" class="flecha-cta" /></span></a><img
+                                src="images/programae_laranja.png" alt=" ilustracion" style="position: absolute;right: -103px;" /> <img src="images/cta-docente.png" alt="docente ilustracion" /></div>
+                        <h2 class="name">EU POSSO<span> PROGRAMAR </span></h2>
+                        <hr>
+                        <span class="skills">O que você quer criar hoje?</span><br>
+                        <p>Com a programação você pode criar suas próprias regras e colocar todas suas ideias em código. Programar é simples e divertido! Navegue pelo nosso site e encontre tudo o que você precisa para aprender a programar.
+                        </p>
+                        <p class="bold">É fácil! Vamos fazer a diferença no mundo!
+                        </p>
+                        <div class="cta page-scroll"><a href="#cursos">Vamos lá!  <span><img src="images/flecha-cta.png" alt="flecha cta" class="flecha-cta"/></span></a>
+                            <img src="images/cta-estudiantes.png" alt="cta ilustracion estudiantes" /></div>
+                        <div class="social_home">
+                            <!-- An&iacute;mate a programar y desaf&iacute;a a tus amigos <br>
+                           en las redes utilizando el hashtag<br> #YoPuedoProgramar -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow animated bounce"></div>
+    </header>
+    <!-- Cursos Grid Section -->
+    <div id="trigger2" class="trigger"></div>
+    <section id="cursos" class="lamps">
+        <div id="scene_lamparas" class="scene z-index">
+            <div class="layer" data-depth="0.60"></div>
+            <div class="lamparas  layer" data-depth="0.40"></div>
+            <div class="lamparitas layer" data-depth="0.20"></div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <h2>CODIFIQUE SUAS IDEIAS</h2>
+                </div>
+                <div class="col-7">
+                    <div class="escalera">
+                        <div class="lista_escalones">
+                            <div class="escalones curso1" data-toggle="modal" data-target="#modalCurso1">
+                                CRIE SEU PRIMEIRO<br> APLICATIVO
+                            </div>
+                            <div class="escalones curso2" data-toggle="modal" data-target="#modalCurso2">
+                                Aprendendo<br> a programar
+                            </div>
+                            <div class="escalones curso3" data-toggle="modal" data-target="#modalCurso3">
+                                Hora Do Código<br>#HoradoCodigo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <h2>CHEGOU A HORA DE<br> VOCÊ SE TESTAR</h2>
+                    <p>Navegue por nossos cursos e descubra como aprender a programar. Se você já realizou algum desses cursos, continue se desafiando e começe a fazer aqueles que ficaram pendentes.</p>
+                    <div class="bajada_ideas">
+                        <p>Clique em cada degrau para ingressar nos cursos e planejar seu caminho no mundo da programação.
+                        </p>
+                    </div>
+                    <!--                   <div class="bajada_ideas2">
+                     <p>Para conocer más cursos ingresa al<br> <a href="http://www.microsoft.com/es-xl/responsabilidadsocial/youthspark/youthsparkhub/default.aspx" alt="YouthSpark Hub"> YouthSpark Hub</a> y conoce todas las herramientas que tiene Microsoft para ofrecerte</p>
+                  </div>
+                  <div class="bajada_ideas3">
+                     <p>Si eres estudiante, puedes tener gratis más herramientas para realizar tus tareas de la mejor manera. Haz click aquí para descubrir <a href="http://miofficemimundo.com" alt="Office 365 ProPlus">Office 365 ProPlus!</a> </p>
+                  </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonios Section -->
+    <div id="trigger3" class="trigger"></div>
+    <section id="testimonios">
+        <div id="nuvesAnimate">
+            <div class="nubes layer" data-depth="0.20"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12  text-center ">
+                    <h2>SEJA A MUDANÇA! FAÇA A DIFERENÇA!</h2>
+                </div>
+                <div class="col-12 text-center">
+                    <p>O código é a nova linguagem de que todos falam e qualquer pessoa pode aprender.<br>
+                        <b>Você já sabe o que vai fazer com ele? </b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <article class="city">
+            <div class="wrapper-city">
+                <div class="boxi" id="edificios"><img alt="ciudad" src="img/testimonios/city.png" /></div>
+                <div class="boxi" id="person-1"><img alt="ciudad" src="images/nubes2.png" /></div>
+                <div class="boxi" id="hola"><img alt="ciudad" src="images/nubes4.png" /></div>
+                <div class="boxi" id="person-3"><img alt="ciudad" src="img/testimonios/person_3.png" /></div>
+                <div class="boxi" id="tv">
+                    <div class="tv-bg">
+                        <div class="videosyoutube">
+                            <div class="col span_6">
+                                <!-- comienza la carga de videos-->
+                                <div id="video-gallery" class="royalSlider videoGallery rsDefault">
+                                    <a class="rsImg" data-rsvideo="https://www.youtube.com/embed/m0SdeGWaJjU#t=14" href="img/videointro.jpg"></a>
+                                    <a class="rsImg" data-rsvideo="https://www.youtube.com/watch?v=2cetpj6BCFY" href="img/video7.jpg"></a>
+                                    <a class="rsImg" data-rsvideo="https://www.youtube.com/watch?v=YV1uj0ORKI0" href="img/video1.jpg"> </a>
+                                    <a class="rsImg" data-rsvideo="https://www.youtube.com/watch?v=LeR9KZy6D88" href="img/video2.jpg"> </a>
+                                    <a class="rsImg" data-rsvideo="https://www.youtube.com/watch?v=qWv1nOA4IFI" href="img/video3.jpg"> </a>
+                                    <a class="rsImg" data-rsvideo="https://www.youtube.com/watch?v=_oY045EpVY8" href="img/video4.jpg"> </a>
+                                    <a class="rsImg" data-rsvideo="https://www.youtube.com/watch?v=zp3cNg-B7h8" href="img/video5.jpg"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- Contact Section -->
+    <div id="trigger4" class="trigger"></div>
+    <section id="calendar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 wrapper-calendar">
+                    <div class="step_wrapper">
+                        <!--<div class="step_box paisuno" data-id="uno">
+                        <span class="point effect sub"></span>
+                        <p>Colombia</p>
+                     </div>
+                     <div class="step_box paisdos" data-id="dos">
+                        <span class="point effect sub"></span>
+                        <p>Argentina</p>
+                     </div> 
+                     <div class="step_box paistres" data-id="tres">
+                        <span class="point effect sub"></span>
+                        <p class="abajo">Chile</p>
+                     </div>
+                      <div class="step_box paiscuatro" data-id="cuatro">
+                        <span class="point effect sub"></span>
+                        <p class="puertorico">Perú</p>
+                     </div>
+                     <div class="step_box paiscinco" data-id="cinco">
+                        <span class="point effect sub"></span>
+                        <p class="abajo">M&eacute;xico</p>
+                     </div>
+                     <div class="step_box paisseis" data-id="seis">
+                      <span class="point effect sub"></span>
+                      <p>Perú</p>
+                      </div>-->
+                        <!-- <div class="step_box paissiete" data-id="siete">
+                        <span class="point effect sub"></span>
+                        <p>Ecuador</p>
+                     </div> -->
+                        <div class="step_box paisocho" data-id="ocho">
+                            <span class="point effect sub"></span>
+                            <p>Brasil</p>
+                        </div>
+                        <div class="seleccion">
+
+
+                        </div>
+                    </div>
+                    <div class="descriptions">
+                        <div class="codigo bubble">
+                            <h4>Semana do código.</h4>
+                            <p>5 dias, conteúdos exclusivos, e tudo sobre como começar a programar.</p>
+                            <span>Faça parte desse desafio!</span>
+                        </div>
+                        <!--COLOMBIA-->
+                        <div id="uno">
+                            <!-- Nav tabs -->
+                            <div>
+                                <p class="eventomas">EVENTO</p>
+                                <ul class="nav nav-tabs mas" role="tablist">
+                                    <li class="evento-1 active"><a href="#evento-1Col" role="tab" data-toggle="tab">1</a></li>
+                                    <li class="evento-2"><a href="#evento-2Col" role="tab" data-toggle="tab">2</a></li>
+                                    <li class="evento-3"><a href="#evento-3Col" role="tab" data-toggle="tab">3</a></li>
+                                    <li class="evento-4"><a href="#evento-4Col" role="tab" data-toggle="tab">4</a></li>
+                                    <li class="evento-5"><a href="#evento-5Col" role="tab" data-toggle="tab">5</a></li>
+                                    <li class="evento-6"><a href="#evento-6Col" role="tab" data-toggle="tab">6</a></li>
+
+                                </ul>
+                            </div>
+                            <!-- Tab panes -->
+                            <!-- <div class="tab-content">
+                           <div class="tab-pane fade in active" id="evento-1Col">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="fecha">
+                                 <h2 class="dia">19 de octubre </h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="lugar">
+                                 <p class="violet">IGovernment Elite supporting: ITCs Minister*
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="lugar">
+                                 <p class="bold violet"> Puntos Vive Digital Plus O Escuelas dotadas con Computadores para Educar
+                                 </p>
+                              </div>
+                               <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="dirigido">
+                                 <h2 class="violet">Abierto al público</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="dirigido">
+                                 <h2 class="violet">TecnoScouts - DX</h2>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-2Col">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="fecha">
+                                 <h2 class="dia">20 de Octubre</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="lugar">
+                                 <p class="violet">Elite supporting: NGO Leaders*
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="lugar">
+                                 <p class="bold violet">NGO CTCs 
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="dirigido">
+                                 <h2 class="violet">Abierto a alumnos de los colegios</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="dirigido">
+                                 <h2 class="violet">CTZ</h2>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-3Col">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="fecha">
+                                 <h2 class="dia">21 de Octubre.</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="descripcion">
+                                 <p class="unrenglon violet">Government Elite supporting: Ministerio de Cultura y Educación de Colombia.</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="lugar">
+                                 <p class="bold violet">Librerias Publicas</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="dirigido">
+                                 <h2 class="violet">Educación y CTZ Ruperto Chaparro</h2>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-4Col">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="fecha">
+                                 <h2 class="dia">21 de Octubre.</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="descripcion">
+                                 <p class="violet">Government Elite supporting: Colombia Joven – Director*
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="lugar">
+                                 <p class="unrenglon bold violet">Librerias Publicas</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="dirigido">
+                                 <h2 class="violet">Educación y CTZ Ruperto Chaparro</h2>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-5Col">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="fecha">
+                                 <h2 class="dia">19 – 23 de octubre.</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="descripcion">
+                                 <p class="violet">Microempresas de Colombia- MEDA
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="lugar">
+                                 <p class="unrenglon bold violet">Medellín<br>Carrera 49 No. 53-19 Of.401, Edificio Bancoquia</p>
+                              </div>
+                              </div>
+                           <div class="tab-pane fade" id="evento-6Col">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="fecha">
+                                 <h2 class="dia">19 – 23 de octubre.</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="descripcion">
+                                 <p class="violet">ParqueSoft Pasto 
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="lugar">
+                                 <p class="unrenglon bold violet">Pasto<br>Carrera 43 No. 18a - 130 Barrio Pandiaco </p>
+                              </div>     
+                           </div>
+                        </div> -->
+                        </div>
+                        <!--ARGENTINA-->
+                        <div id="dos">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="evento">EVENTO</li>
+                                    <li class="evento-1 active"><a href="#evento-1arg" role="tab" data-toggle="tab">1</a></li>
+                                    <li class="evento-2"><a href="#evento-2arg" role="tab" data-toggle="tab">2</a></li>
+                                    <li class="evento-1 "><a href="#evento-3arg" role="tab" data-toggle="tab">3</a></li>
+                                    <li class="evento-2"><a href="#evento-4arg" role="tab" data-toggle="tab">4</a></li>
+                                </ul>
+                            </div>
+                            <!-- Tab panes -->
+                            <!-- <div class="tab-content">
+                           <div class="tab-pane fade in active" id="evento-1arg">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">Próximamente Marzo 2016</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">CILSA CÓRDOBA</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class=" violet">Córdoba<br>Coronel Olmedo 180 Ciudad: Córdoba Capital</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-2arg">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">Próximamente Marzo 2016</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">CILSA LA PLATA</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class=" violet">La Plata<br>Diagonal 73 Nro 1964 entre 49 y 50</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-3arg">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">Próximamente Marzo 2016</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">CILSA MAR DEL PLATA</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class=" violet">Mar del Plata<br> Santa Fe 2062</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-4arg">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">Próximamente Marzo 2016</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">CILSA ROSARIO</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class=" violet">Chiclayo<br>Av. Francia 241</p>
+                              </div>
+                           </div>
+                        </div> -->
+                        </div>
+                        <!--CHILE-->
+                        <div id="tres">
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="evento-1cl">
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                        <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                        <h2 class="dia">19 – 23 de octubre.</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                        <p class="violet">MAGENTA</p>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                        <p class=" violet">San José de Maipo<br>Calle Comercio # 17.762 - San José de Maipo - Santiago de Chile</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--PUERTO RICO-->
+                        <div id="cuatro">
+                            <p class="bubble">COMING SOON</p>
+                        </div>
+                        <!--MEXICO-->
+                        <div id="cinco">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="evento">EVENTO</li>
+                                    <li class="evento-1 active"><a href="#evento-1mex" role="tab" data-toggle="tab">1</a></li>
+                                    <li class="evento-2"><a href="#evento-2mex" role="tab" data-toggle="tab">2</a></li>
+                                    <li class="evento-3"><a href="#evento-3mex" role="tab" data-toggle="tab">3</a></li>
+                                    <li class="evento-4"><a href="#evento-4mex" role="tab" data-toggle="tab">4</a></li>
+                                    <li class="evento-5"><a href="#evento-5mex" role="tab" data-toggle="tab">5</a></li>
+                                    <li class="evento-6"><a href="#evento-6mex" role="tab" data-toggle="tab">6</a></li>
+                                    <li class="evento-1"><a href="#evento-7mex" role="tab" data-toggle="tab">7</a></li>
+                                    <li class="evento-2"><a href="#evento-8mex" role="tab" data-toggle="tab">8</a></li>
+                                    <li class="evento-3"><a href="#evento-9mex" role="tab" data-toggle="tab">9</a></li>
+                                    <li class="evento-4"><a href="#evento-10mex" role="tab" data-toggle="tab">10</a></li>
+                                    <li class="evento-5"><a href="#evento-11mex" role="tab" data-toggle="tab">11</a></li>
+
+                                </ul>
+                            </div>
+                            <!-- Tab panes -->
+                            <!-- <div class="tab-content">
+                           <div class="tab-pane fade active in" id="evento-1mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código</h2>                              
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 al 23 de octubre </h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">Fundación Proacceso
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="violet">70 Centros RIA y 50 Bibliotecas Digitales <br>
+                                 <a href="http://www.ria.org.mx/toluca" target="_blank">Ubicación de los Centros</a>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-2mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código y Aprendiendo a Programar</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 al 23 de octubre </h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">Secretaría de Comunicaciones y Transportes <br> Puntos México Conectado 
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="violet">Puntos México Conectado<br>
+                                  <a href="http://puntomexicoconectado.mx/" target="_blank">Ubicación de los Centros</a>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-3mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código y Aprendiendo a Programar</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="fecha">
+                                 <h2 class="dia">19 al 23 de octubre </h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="violet">Centro POETA YouthSpark - UTSC</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="unrenglon violet">Centro POETA Santa Catarina  </p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-4mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código y Aprendiendo a Programar</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 al 23 de octubre </h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="violet">Tecnológico Nacional de México </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class=" violet">Solamente para alumnos y docentes del TecNM</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-5mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 al 23 de octubre </h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="violet">Centros CODAF - Fonabec</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class=" violet">Solamente para beneficiarios del Centro</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-6mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">La hora de Código  y Aprendiendo a Programar</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 al 23 de octubre </h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="violet">Centros Poder Joven<br>
+                                 <a href="mailto:ubeltran@imjuventud.gob.mx " target="_blank">   Más información</a>
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class=" violet">Abierto al público</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-7mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Introducción a YoPuedoPrograma</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">6 de octubre  </h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="violet">Microsoft <br>
+                                 <a href="https://join.microsoft.com/meet/a-osorte/HP8SLJTD" target="_blank">En Línea</a>
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class=" violet">Abierto a docentes, educadores y representantes de Centros YouthSpark</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-8mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Introducción a YoPuedoPrograma</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">8 de octubre (16:00hs)  </h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="violet">Microsoft <br>
+                                 <a href="https://join.microsoft.com/meet/a-osorte/HP8SLJTD" target="_blank">En Línea</a>
+                                 </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="curso">
+                                 <p class=" violet">Jóvenes</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-9mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Por qué aprender a programar</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">7 de octubre</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">Fundación Asahac</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class=" violet">Reynosa, Tamaulipas </p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="curso">
+                                 <p class=" violet">Solamente instituciones invitadas </p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-10mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 – 23 de octubre.</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">Universidad Tecnológica Santa Catarina –UTSC</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class=" violet">Monterrey<br>Carretera Saltillo Monterrey Km 61.5 </p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-11mex">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 – 23 de octubre.</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">Fundación Proacceso</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class=" violet">Toluca<br>Paseo Colón #224-55, Col. Centro, Toluca </p>
+                              </div>
+                           </div>
+                        </div> -->
+                        </div>
+                        <!--PERU-->
+                        <div id="seis">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="evento">EVENTO</li>
+                                    <li class="evento-1 active"><a href="#evento-1per" role="tab" data-toggle="tab">1</a></li>
+                                    <li class="evento-2"><a href="#evento-2per" role="tab" data-toggle="tab">2</a></li>
+                                    <li class="evento-1 "><a href="#evento-3per" role="tab" data-toggle="tab">3</a></li>
+                                    <li class="evento-2"><a href="#evento-4per" role="tab" data-toggle="tab">4</a></li>
+                                </ul>
+                            </div>
+                            <!-- Tab panes -->
+                            <!-- <div class="tab-content">
+                           <div class="tab-pane fade in active" id="evento-1per">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">#YoPuedoProgramar con Microsoft y Laboratoria</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 de Octubre a 23 de Octubre</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="unrenglon violet">On line a través de redes sociales</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">Microsoft y Laboratoria te invitan a sumarte y hacer que todos los jóvenes peruanos aprendan a programar. <br>Visita <a href="http://www.yopuedoprogramar.com" target="_blank">www.yopuedoprogramar.com </a></p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="curso">
+                                 <h2 class="violet">Abierto al p&uacute;blico</h2>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-2per">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">#YoPuedoProgramar en los Centros POETA YouthSpark de Villa El Salvador y Comas</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 de Octubre a 23 de Octubre</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class="unrenglon violet">Villa El Salvador y Comas</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="unrenglon violet">Visita los Centros POETA YouthSpark de FUNDADES y pregunta por los horarios para llevar los cursos de #YoPuedoProgramar</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="curso">
+                                 <h2 class="violet">Abierto al p&uacute;blico</h2>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-3per">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 – 23 de octubre.</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">Grupo FUNDADES COMAS</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class=" violet">Lima<br> Av. Guillermo de la Fuente Mz. Q1 Lt. 16</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="evento-4per">
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Centros POETA YouthSpark que participan de la semana de Código y puedas tomar tu #Hora de código</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                 <h2 class="dia">19 – 23 de octubre.</h2>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">COPEME</p>
+                              </div>
+                              <div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                 <p class=" violet">Chiclayo<br> Prolongación Bolognesi - Interior del CEO PROMAE</p>
+                              </div>
+                           </div>
+                        </div> -->
+                        </div>
+                        <!--ECUADOR-->
+                        <div id="siete">
+
+                        </div>
+                        <!--BRASIL-->
+                        <div id="ocho">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="evento">EVENTO</li>
+                                    <li class="evento-1 active"><a href="#evento-1bra" role="tab" data-toggle="tab">1</a></li>
+                                    <li class="evento-2"><a href="#evento-2bra" role="tab" data-toggle="tab">2</a></li>
+                                    <li class="evento-3 "><a href="#evento-3bra" role="tab" data-toggle="tab">3</a></li>
+                                    <li class="evento-5"><a href="#evento-4bra" role="tab" data-toggle="tab">4</a></li>
+                                    <li class="evento-6"><a href="#evento-5bra" role="tab" data-toggle="tab">5</a></li>
+                                    <!--li class="evento-1"><a href="#evento-6bra" role="tab" data-toggle="tab">6</a></li>
+                              <li class="evento-2 "><a href="#evento-7bra" role="tab" data-toggle="tab">7</a></li>
+                              <li class="evento-3"><a href="#evento-8bra" role="tab" data-toggle="tab">8</a></li> 
+                              <li class="evento-4"><a href="#evento-9bra" role="tab" data-toggle="tab">9</a></li-->
+                                </ul>
+                            </div>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="evento-1bra">
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                        <h2 class="negro">Launch of the Campaign + MOU with Softex signature to deliver #Eupossoprogramar + YouthSpark contents at the Brasil + TI website</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                        <h2 class="dia">October 3rd - Morning</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                        <p class="unrenglon violet">Live event at Brasília – DF.</p>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                        <p class="violet">The World Congress on Information Technology is based on four main pillars: speeches, exhibitions, B2B meetings, and social events. Brazil is hosting it for the first time and it seeks to build strong partnerships
+                                            to the country, with a more political side.</p>
+                                    </div>
+                                    <!--div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="curso">
+                                 <h2 class="violet">Abierto al p&uacute;blico</h2>
+                              </div-->
+                                </div>
+                                <div class="tab-pane fade" id="evento-2bra">
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                        <h2 class="negro">CONECTA IF</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                        <h2 class="dia">October 3rd to 7th</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                        <p class="unrenglon violet">Live Event at Brasília – DF.</p>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                        <p class="unrenglon violet">Campaign presentation to the audience of students from the Technology Schools, with the participation of Gov. + Lemann Foundation (bringing the celebrity MC Soffia) + Rodrigo Baggio.</p>
+                                    </div>
+                                    <!--div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon5.jpg" alt="curso">
+                                 <h2 class="violet">Abierto al p&uacute;blico</h2>
+                              </div-->
+                                </div>
+                                <div class="tab-pane fade" id="evento-3bra">
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                        <h2 class="negro">Hands On of Hour of Code for students</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                        <h2 class="dia">October 3rd to 7th</h2>
+                                    </div>
+                                    <!--div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                 <p class="violet">Grupo FUNDADES COMAS</p>
+                              </div-->
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                        <p class=" violet">The Conecta IT is a large event of the 39 Federal Institutes that puts togheter around 20.000 youth to realize workshops, discussions and lectures about relevant topics to youth, such as entrepreneurship.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="evento-4bra">
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                        <h2 class="negro">Facebook live event to engage Educators and Youth followers of MS channels + Instituto Filantropia</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                        <h2 class="dia">October 5th</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                        <p class="violet">Web-conference live @ Facebook</p>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                        <p class=" violet">Facebook followers from MS channels (Education and DX - 104.000 teachers registered + 14000 from DX)+ public from third sector registered at the Instituto Filantropia/ATN and CDI/Recode.<br>
+                                            <strong>Agenda:</strong> Microsoft Rodrigo Dias (TBC) + Lemann + MC Soffia and Marcio Zeppelini Inst. Filantropia. </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="evento-5bra">
+                                    <!--div class="tab-content-wrapper">
+                                 <img src="img/calendar/calendar_icon1.jpg" alt="curso">
+                                 <h2 class="negro">Facebook live event to engage Educators and Youth followers of MS channels + Instituto Filantropia</h2>
+                              </div-->
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon2.jpg" alt="curso">
+                                        <h2 class="dia">October 7th</h2>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon3.jpg" alt="curso">
+                                        <p class="violet">Microsoft Auditorium</p>
+                                    </div>
+                                    <div class="tab-content-wrapper">
+                                        <img src="img/calendar/calendar_icon4.jpg" alt="curso">
+                                        <p class=" violet">Event to engage students and Educators from São Paulo State Secretary of Education, Centro Paula Souza and Bandeirantes School.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-6 bubble"><p>COOMING SOON</p></div> -->
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="row">
+                <div class="col-6 col-offset-2">
+                    <h3>Seja a mudança! Faça a diferença!</h3>
+                </div>
+                <div class="logo"><img src="img/microsoft.jpg" alt="Microsoft"></div>
+            </div>
+            <div class="row whiteBg">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <!--                   <ol class="carousel-indicators">
+                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                  </ol> -->
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/footer1.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/footer2.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/footer3.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/footer4.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/footer5.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/footer6.png" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerfooter">
+                <div class="row legales">
+                    <div class="col-12">
+                        <ul style="width: 990px">
+                            <li><a href="http://support.microsoft.com/contactus/?ws=mscom" target="_blank">Fale Conosco</a></li>
+                            <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" target="_blank">Política de Privacidade</a></li>
+                            <li><a href="http://www.microsoft.com/brasil/misc/cpyright.htm" target="_blank">Nota Legal</a></li>
+                            <li><a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/pt-br.mspx" target="_blank">Marcas</a></li>
+                            <li><a href="http://choice.microsoft.com/" target="_blank">Sobre os nossos anúncios</a></li>
+                            <li><span>© 2016 Microsoft</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- cursos Modals -->
+    <!-- cursos Modals -->
+    <div class="modal fade mCurso1" id="modalCurso1" tabindex="-1" role="dialog" aria-labelledby="modalCurso1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-bg1">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img alt="cerrar"src="img/cursos/close.png"/></button>
+                        <h4 class="modal-title text-center" id="myModalLabel">CRIE SEU PRIMEIRO APLICATIVO</h4>
+                        <p style=" text-align: center; ">PORTUGUÊS | Navegadores modernos, tablets | Principiantes</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6"><img src="images/overlay-aprendiendo.png" alt="" /></div>
+                            <div class="col-6">
+                                <p>Se você quer criar aplicativos para Windows 10 na Plataforma Universal do Windows (UWP), estas sessões são para você. Siga com os exercícios de programação enquanto aprende técnicas e conceitos essenciais.
+                                </p>
+                                <div class="cta_touch"><a href="https://mva.microsoft.com/pt-br/training-courses/windows-10-desenvolvimento-para-principiantes-14541" target="_blank">QUIERO APRENDER</a></div>
+
+                                <!-- <div class="cta_touch"><a href="https://www.microsoft.com/es/digitalliteracy/advancedcurriculum.aspx" target="_blank">QUIERO APRENDER</a></div> -->
+
+                                <!-- <div class="cta_touch"><a href="#" target="_blank">JUGAR</a></div> -->
+                                <!-- <a href="http://studio.code.org/hoc/1" target="_blank"><img src="img/cursos/arrow_cursos.png"alt="cursos"/></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade mCurso2" id="modalCurso2" tabindex="-1" role="dialog" aria-labelledby="modalCurso2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-bg2">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img alt="cerrar"src="img/cursos/close.png"/></button>
+                        <h4 class="modal-title text-center" id="myModalLabel">APRENDENDO A PROGRAMAR</h4>
+                        <p style=" text-align: center; ">PORTUGUÊS | Navegadores modernos, tablets | Idade 15 em diante</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" style="margin-bottom: -40px;">
+                            <div class="col-6"><img src="images/overlay-touch.png" alt="" /></div>
+                            <div class="col-6 margen-modal">
+                                <p>Mais de 1.000 crianças e adolescentes que já aprenderam a programar!</p>
+                                <p>Continue dando seus primeiros passos na programação e verá que a complexidade técnica das ferramentas de desenvolvimento de aplicativos é um mito, e que todos podemos programar. Aqui oferecemos as ferramentas necessárias
+                                    para que você possa desenvolver suas ideias.<br>
+                                </p>
+                                <!--p>Não esqueça de se cadastrar na página do curso!</p-->
+                                <div class="cta_touch"><a href="https://mva.microsoft.com/pt-br/training-courses/aprendendo-a-programar-14132" target="_blank">QUIERO APRENDER</a></div>
+                                <!-- <a href="http://studio.code.org/hoc/1" target="_blank"><img src="img/cursos/arrow_cursos.png"alt="cursos"/></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal fade mCurso3" id="modalCurso3" tabindex="-1" role="dialog" aria-labelledby="modalCurso2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-bg3">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img alt="cerrar"src="img/cursos/close.png"/></button>
+                        <h4 class="modal-title text-center" id="myModalLabel">A HORA DO CÓDIGO</h4>
+                        <p style="
+                         text-align: center;
+                     ">Muitos idiomas | Navegadores modernos e tablets | A partir de 6 anos de idade</p>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6"><img src="images/overlay-code.org.png" alt="" /></div>
+                                <div class="col-6 margen-modal2">
+                                    <!-- <p>Curso solamente disponible en español.</p> -->
+                                    <p>Anime-se e faça agora a sua hora do código, é fácil e divertido. Não esqueça de se cadastrar na página do curso!: </p>
+                                    <!-- <p>¡No te olvides de registrarte en la página del curso!</p> -->
+                                    <div class="angry"></div>
+                                    <p style="margin-left:70px;margin-bottom:30px;">
+                                        Use blocos de código para levar o Steve ou a Alex a uma aventura pelo mundo do Minecraft.
+                                    </p>
+                                    <!-- <p style="margin-top:-22px;margin-bottom:10px;">¡Curso disponible en todos los idiomas!</p> -->
+                                    <div class="cta_touch" style="margin-bottom: 40px;"><a href="https://code.org/mc" title="Quiero_aprender_Curso_code.org" target="_blank">QUERO APRENDER</a></div>
+                                    <!-- <a href="http://studio.code.org/hoc/1" target="_blank"><img src="img/cursos/arrow_cursos.png"alt="cursos"/></a> -->
+                                    <div class="frozen"></div>
+                                    <p style="margin-left:70px;margin-bottom:30px;">Vamos programar com Ana e Elsa de Frozen (Uma aventura Congelante)! Vocês podem criar flocos de neve, uma paisagem de inverno e compartilhar com seus amigos, da forma mais divertida.</p>
+                                    <div class="cta_touch" style="margin-top:-22px; "><a href="http://code.org/api/hour/begin/frozen" title="Quiero_aprender_Curso_code.org" target="_blank">QUERO APRENDER</a></div>
+                                    <!-- <a href="http://studio.code.org/hoc/1" target="_blank"><img src="img/cursos/arrow_cursos.png"alt="cursos"/></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade mCurso4" id="modalCurso4" tabindex="-1" role="dialog" aria-labelledby="modalCurso2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-bg4">
+                    < <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img alt="cerrar"src="img/cursos/close.png"/></button>
+                            <h4 class="modal-title" id="myModalLabel">Curso Code.org</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">ertfghj</div>
+                                <div class="col-6">
+                                    <p>LLa Hora de Código de Code.org es sólo el primer paso de un increíble viaje de aprendizaje sobre cómo funciona la tecnología y cómo crear aplicaciones de software. Anímate y ten tu hora de código, es fácil y divertido.
+                                        <p>
+                                        </p>
+                                        Curso solamente disponible en español.</p>
+                                    <p>¡No te olvides de registrarte en la página del curso!</p>
+                                    <a href="http://studio.code.org/hoc/1" target="_blank"><img src="img/cursos/arrow_cursos.png" alt="cursos" /></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper_fb">
+        <div class="step_box_fb" data-id="twitter">
+            <a href="https://www.facebook.com/MSEducacion?fref=ts">
+                <img src="img/fb.png" alt="" />
+            </a>
+            <div class="mostrarTweets"><img alt="" src="img/twitter.png" /></div>
+        </div>
+    </div>
+    <div class="feed">
+        <div id="twitter">
+            <div class="header-twitter">
+                <img alt="" src="img/twitter/icon_twitter.png" />
+                <img class="twitter_close" alt="" src="img/twitter/close.png" />
+            </div>
+            <div class="containter-tweets">
+                <a class="twitter-timeline" href="https://twitter.com/hashtag/yopuedoprogramar" height="365" style="border-radius: 20px;" data-widget-id="763811413060190212">Tweets sobre #yopuedoprogramar</a>
+                <!-- jQuery Version 1.11.0 -->
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                <script>
+                    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+                </script>
+                <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                    $(document).ready(function() {
+                        $('.mostrarTweets').on('click', function(e) {
+                            $('#twitter').show();
+                        });
+                        $('.twitter_close').on('click', function(e) {
+                            $('#twitter').hide();
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Plugin Handlebars -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <script src="js/jquery.royalslider.min.js"></script>
+    <!-- Plugin Underscore-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <!-- Plugin Moment-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+    <script src="js/shadowbox.js"></script>
+    <script src="js/es.js"></script>
+    <script src="js/easing/EasePack.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/vendor/greenSock/TweenMax.min.js"></script>
+    <script src="js/vendor/greenSock/plugins/CSSPlugin.min.js"></script>
+    <script src="js/vendor/greenSock/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script type="text/javascript">
+        Shadowbox.init({
+            language: "es",
+            players: ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv']
+        });
+    </script>
+    <!--  <script type="text/javascript"> 
+      $(document).ready(function(){
+          setTimeout(function() {
+              Shadowbox.open({
+                  content:    "<div><img src='images/minecraft_mod.jpg'></div><br><br><div class='modaltext'>Faça sua Hora do Código com Minecraft! Compartilhe desafiando<br> seus amigos, usando #EuPossoProgramar #HoradoCódigo<br> <a href='https://code.org/mc' target='_blank'>CLIQUE AQUÍ</a></div><br><br><div class='modaltext1'>Fez a hora se tomou a Hora do Código com Minecraft, seu próximo passo é <a class='modaltext1a' href='https://www.microsoftvirtualacademy.com/es-es/training-courses/curso-aprendiendo-a-programar-8865?l=FbceMB02_5004984382' target='_blank'>Aprendendo a Programar</a>. <br>Todos podemos aprender a programar, você também pode!</div>",
+                  player:     "html",
+                  title:      "",
+                  width:      700,
+                  height:     600
+              });
+          }, 50);
+      });
+   </script>
+ -->
+    <!-- Scroll Magic -->
+    <script src="js/jquery.scrollmagic.min.js"></script>
+    <script src="js/jquery.scrollmagic.debug.js"></script>
+    <!-- Scripts -->
+    <script src="js/Main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.step_wrapper').on('click', '.step_box', function(e) {
+                e.preventDefault();
+
+                $('.step_wrapper > div').removeClass("active");
+                $(e.currentTarget).addClass("active");
+
+
+                var idTarget = $(this).attr("data-id");
+                $(".descriptions > div").stop().hide(300);
+                $(".descriptions #" + idTarget).stop().show(300)
+
+            });
+        });
+    </script>
+    <script id="simple-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <div class="wrapper-tweets">
+            <a href="https://twitter.com/{{screenName}}"><img class="avatar" src="{{profileImage}}" alt="" /></a>
+
+            <div class="tweets"><span class="nick"><a href="https://twitter.com/{{screenName}}">{{name}}</a></span> <span><a href="https://twitter.com/{{screenName}}/status/{{tweetId}}">{{text}}</a></span>
+
+                <p class="minutes"><a href="#">{{dateAdd}}</a></p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            $('#video-gallery').royalSlider({
+                autoHeight: false,
+                arrowsNav: true,
+                fadeinLoadedSlide: true,
+                controlNavigationSpacing: 0,
+                controlNavigation: '',
+
+                thumbs: {
+                    autoCenter: false,
+                    fitInViewport: true,
+                    orientation: 'horizontal',
+                    spacing: 0
+                },
+                keyboardNavEnabled: true,
+                imageScaleMode: 'fill',
+                imageAlignCenter: false,
+                loop: false,
+                loopRewind: true,
+                numImagesToPreload: 3,
+                video: {
+                    autoHideArrows: true,
+                    autoHideControlNav: false,
+                    autoHideBlocks: true,
+                    youTubeCode: '<iframe src="http://www.youtube.com/embed/%id%?rel=0&rel=1&autoplay=1&showinfo=0&autohide=1" frameborder="no"></iframe>'
+                },
+                autoScaleSlider: true,
+                autoScaleSliderWidth: 800,
+                autoScaleSliderHeight: 500
+
+            });
+
+
+            slider = $('#video-gallery').data('royalSlider');
+            $(".arrowiz").click(function(e) {
+                e.preventDefault();
+                slider.prev();
+
+            });
+            $(".arrowdr").click(function(e) {
+                e.preventDefault()
+                slider.next();
+            });
+
+            $(".rsThumbsContainer .rsThumb").each(function(index, obj) {
+
+                $(obj).click(function() {
+                    slider.goTo(index);
+                })
+            })
+
+            slider.ev.on('rsBeforeAnimStart', function(event) {
+
+                var current = slider.currSlideId;
+                var target = $('.rsThumbsContainer .rsThumb')[current];
+                $(".seleccionado").removeClass("seleccionado");
+                $(target).addClass("seleccionado");
+
+                if ((slider.numSlides - slider.currSlideId) * 200 > ($(".contenedorcarousel").width()) - 200) {
+                    if (current != 0) {
+                        var targetOfset = -200 * current + 200;
+                    } else {
+
+                        var targetOfset = -200 * current;
+                    }
+
+                    $(".rsThumbsContainer").stop().animate({
+                        "margin-left": targetOfset
+                    }, 1000)
+                } else if (current + 1 >= slider.numSlides - 1) {
+
+                    var targetOfset = -(slider.numSlides * 200) + $(".contenedorcarousel").width();
+                    $(".rsThumbsContainer").stop().animate({
+                        "margin-left": targetOfset
+                    }, 1000)
+                }
+
+            });
+
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //$('#hola').modal('show');
+            $('.step_box_twitter,.twitter_close').on('click', function(e) {
+                e.preventDefault();
+                if (!$('.feed > div').hasClass("active")) {
+                    loadTweets();
+                } else
+                    $('.feed > div').toggleClass("active");
+
+            });
+
+            $('#twitter').bind('scroll', function() {
+                if ($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) {
+                    loadTweets();
+                }
+            })
+        });
+
+        function loadTweets() {
+            var take = $('.wrapper-tweets').size() + 10;
+            $.ajax({
+                method: "POST",
+                url: "https://www.goleadordeaplicaciones.com/api/tweetget",
+                data: {
+                    take: take,
+                    localize: 0
+                },
+                success: function(res) {
+                    var raw_template = $('#simple-template').html();
+                    // Compile that into an handlebars template
+                    var template = Handlebars.compile(raw_template);
+                    // Retrieve the placeHolder where the Posts will be displayed
+                    // Generate the HTML for each post
+                    var html = template(res);
+                    // Render the posts into the page
+                    var htmlString = _.unescape(html);
+                    $('.containter-tweets').html(htmlString);
+
+                    $('.minutes a').each(function(index, element) {
+                        moment.locale('es');
+                        var dateAdd = moment(parseInt($(this).text())).fromNow();
+                        $(this).text(dateAdd);
+                    });
+
+                    if (!$('.feed > div').hasClass("active"))
+                        $('.feed > div').toggleClass("active");
+                }
+            });
+        }
+    </script>
+    <script type="text/JavaScript">
+        var varSegmentation = 0; var varClickTracking = 1; var varCustomerTracking = 1; var varAutoFirePV = 1; var Route = ""; var Ctrl = ""; document.write("
+        <script type='text/javascript' src='" + (window.location.protocol) + "//c.microsoft.com/ms.js' " + " '><\/script>");
+      </script> 
+      <noscript><img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx"/></noscript>
+     <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55J5P6"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+   </body>
 </html>
